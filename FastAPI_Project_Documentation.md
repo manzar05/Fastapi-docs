@@ -71,7 +71,12 @@ PROJECT_NAME=FastAPI Demo
 ### Initialize Alembic (optional)
 ```bash
 cd app/db
-alembic init migrations
+# Default: alembic init migrations
+alembic init app/db/migrations
+```
+### Create first migrations
+```
+alembic revision --autogenerate -m "init"
 ```
 
 ---
