@@ -78,7 +78,10 @@ alembic init app/db/migrations
 ```
 alembic revision --autogenerate -m "init"
 ```
-
+### Create migrate
+```
+alembic upgrade head
+```
 ---
 
 ## 📁 3. File-by-File Purpose
